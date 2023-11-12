@@ -20,11 +20,11 @@ void freecmd(char **arr);
 char *read_line(void);
 char **tokenizer(char *line);
 
-char *_strdup(const char *str);
+char *_strdp(const char *str);
 int _strcmp(char *s1, char *s2);
 int _strlen(char *s);
 char *_strct(char *eest, char *srd);
-char *_strcpy(char *dest, char *src);
+char *_strcp(char *dest, char *src);
 
 char *_getenv(char *var);
 char *_getpath(char *command);
