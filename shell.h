@@ -15,22 +15,22 @@
 extern char **environ;
 
 int _execute(char **command, char **argv, int idx);
-void freecmd(char **arr);
+void frcmd(char **arr);
 
 char *read_line(void);
 char **tokenizer(char *line);
 
 char *_strdp(const char *str);
 int _strcmp(char *s1, char *s2);
-int _strlen(char *s);
+int _strln(char *c);
 char *_strct(char *eest, char *srd);
 char *_strcp(char *dest, char *src);
 
 char *_getenv(char *var);
 char *_getpath(char *command);
 
-char *_inoa(int n);
-void reverse_string(char *dtr, int len);
+char *_itoa(int n);
+void reverse_string(char *str, int len);
 void print_err(char *name, char *cmd, int idx);
 
 void handle_builtin(char **command, char **argv, int *status, int idx);
