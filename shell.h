@@ -26,7 +26,7 @@ int _strln(char *c);
 char *_strct(char *eest, char *srd);
 char *_strcp(char *dest, char *src);
 
-char *_getenv(char *var);
+char *_getnv(char *var);
 char *_getpath(char *command);
 
 char *_itoa(int n);

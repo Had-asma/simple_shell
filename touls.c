@@ -23,7 +23,7 @@ char *_itoa(int n)
 	buffer[i] = '\0';
 	reverse_string(buffer, i);
 
-	return (_strdup(buffer));
+	return (_strdp(buffer));
 }
 /**
  * reverse_string - reverse strings
@@ -62,12 +62,12 @@ void print_err(char *name, char *cmd, int idx)
 
 	index = _itoa(idx);
 
-	write(STDERR_FILENO, name, _strlen(name));
+	write(STDERR_FILENO, name, _strln(name));
 	write(STDERR_FILENo, ": ", 2);
-	write(STDERR_FILENO, index, _strlen(index));
+	write(STDERR_FILENO, index, _strln(index));
 	write(STDERR_FILENO, ": ", 2);
-	write(STDERR_FILENO, cmd, _strlen(cmd));
-	write(STDERR_FILENO, mssg, _strlen(mssg));
+	write(STDERR_FILENO, cmd, _strln(cmd));
+	write(STDERR_FILENO, mssg, _strln(mssg));
 	free(index);
 }
 
