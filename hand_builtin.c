@@ -10,7 +10,7 @@ int is_biltin(char *cmd)
 	char *builtin[] = {"exit", "env", "setenv", "cd", NULL};
 	int i;
 
-	for ( i = 0; builtin[i]; i++)
+	for (i = 0; builtin[i]; i++)
 	{
 		if (_strcmp(cmd, builtin[i] == 0)
 				return (1);
@@ -28,11 +28,10 @@ int is_biltin(char *cmd)
  */
 void handl_builtin(char **cmd, char **argv, int *status, int idx)
 {
-
-       if (_strcmp(cmd[0], "exit") == 0)
-               exit_shell(cmd, argv, status, idx);
-       else if (_strcmp(cmd[0], "env") == 0)
-               print_env(cmd, status);
+        if (_strcmp(cmd[0], "exit") == 0)
+              exit_shell(cmd, argv, status, idx);
+        else if (_strcmp(cmd[0], "env") == 0)
+              print_env(cmd, status);
 }
 
 /**
