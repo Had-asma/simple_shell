@@ -1,18 +1,18 @@
 #include "shell.h"
 
 /**
- * _strln - length of a string
- * @c: input char
+ * _strlen - length of a string
+ * @s: input char
  * Return: lenght
  */
 
-int _strln(char *c)
+int _strlen(char *s)
 {
 	int i = 0;
 
-	while (*c != '\0')
+	while (*s != '\0')
 	{
-		c++;
+		s++;
 		i++;
 	}
 	return (i);

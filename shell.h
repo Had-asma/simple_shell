@@ -22,12 +22,12 @@ char **tokenizer(char *line);
 
 char *_strdp(const char *str);
 int _strcmp(char *s1, char *s2);
-int _strln(char *c)
+int _strlen(char *s)
 char *_strct(char *eest, char *srd);
 char *_strcp(char *dest, char *src);
 
 char *_getnv(char *var);
-char *_getpath(char *command);
+char *_getpath(char *cmd);
 
 char *_itoa(int n);
 void reverse_string(char *str, int len);
