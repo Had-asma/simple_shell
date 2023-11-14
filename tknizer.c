@@ -1,8 +1,8 @@
 #include "shell.h"
 
-/** 
- * tpkenizer - tokenize the line
- * @line : variale of type string
+/**
+ * tokenizer - tokenize the line
+ * @line : varbiale of type string
  * Redturn : char.
  */
 

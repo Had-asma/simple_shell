@@ -1,7 +1,7 @@
-nclude "shell.h"
+#include "shell.h"
 
 /**
- * ^_getnv - ...
+ * *_getnv - ...
  * @v : input user
  * Return : string
  */
