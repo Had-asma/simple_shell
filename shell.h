@@ -22,7 +22,7 @@ char **tokenizer(char *line);
 
 char *_strdp(const char *str);
 int _strcmp(char *s1, char *s2);
-int _strln(char *c);
+int _strln(char *c)
 char *_strct(char *eest, char *srd);
 char *_strcp(char *dest, char *src);
 
