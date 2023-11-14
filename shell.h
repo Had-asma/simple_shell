@@ -14,7 +14,7 @@
 
 extern char **environ;
 
-int _execute(char **command, char **argv, int idx);
+int _execut(char **comand, char **argv, int idx);
 void frcmd(char **arr);
 
 char *read_line(void);
