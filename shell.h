@@ -33,10 +33,10 @@ char *_itoa(int n);
 void reverse_string(char *str, int len);
 void print_err(char *name, char *cmd, int idx);
 
-void handle_builtin(char **command, char **argv, int *status, int idx);
-int is_builtin(char *command);
-void exit_shell(char **command, char **argv, int *status, int idx);
-void print_env(char **command, int *status);
+void handl_builtin(char **cmd, char **argv, int *status, int idx);
+int is_biltin(char *cmd);
+void exit_shell(char **cmd, char **argv, int *status, int idx);
+void print_env(char **cmd, int *status);
 
 int is_positive_num(char *str);
 int _atoi(char *str);
