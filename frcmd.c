@@ -8,7 +8,7 @@
 
 void frcmd(char **arr)
 {
-	int i ;
+	int i;
 
 	if (!arr)
 		return;

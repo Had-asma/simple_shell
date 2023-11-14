@@ -2,7 +2,7 @@
 /**
  * _itoa - ....
  * @n : integer
- * Return : string
+ * Return : ascii value
  */
 
 char *_itoa(int n)
@@ -51,7 +51,7 @@ void reverse_string(char *str, int len)
 /**
  * print_err - output of error message
  * @name : name of command
- * @cmd : comma,d 
+ * @cmd : command
  * @idx : index of line
  * Return : string
  */
@@ -79,7 +79,7 @@ void print_err(char *name, char *cmd, int idx)
 
 int is_positive_num(char *str)
 {
-	int i ;
+	int i;
 
 	if (!str)
 		return (0);
@@ -94,7 +94,7 @@ int is_positive_num(char *str)
 /**
  * _atoi - ...
  * @str : ...;
- * Retuen : integer
+ * Retuen : integer value
  */
 
 int _atoi(char *str)
