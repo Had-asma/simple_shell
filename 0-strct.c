@@ -17,6 +17,7 @@ char *_strct(char *eest, char *srd)
 		*(eest + lenght) = *(srd + i);
 		lenght++;
 	}
+
 	*(eest + lenght) = '\0';
 
 	return (eest);

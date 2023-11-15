@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * _itoa - fonction itoa
+ * *_itoa - fonction itoa
  * @n : integer
  * Return : ascii value
  */
@@ -63,7 +63,7 @@ void print_err(char *name, char *cmd, int idx)
 	index = _itoa(idx);
 
 	write(STDERR_FILENO, name, _strlen(name));
-	write(STDERR_FILENo, ": ", 2);
+	write(STDERR_FILENO, ": ", 2);
 	write(STDERR_FILENO, index, _strlen(index));
 	write(STDERR_FILENO, ": ", 2);
 	write(STDERR_FILENO, cmd, _strlen(cmd));
@@ -83,18 +83,19 @@ int is_positive_number(char *std)
 
 	if (!std)
 		return (0);
-	for (i = 0, std[i]; i++)
+	for (i = 0; std[i]; i++)
 	{
 		if (std[i] < '0' || std[i] > '9')
 			return (0);
 	}
+
 	return (1);
 }
 
 /**
  * _atoi - ...
  * @std : ...
- * Retuen : integer value
+ * Return : integer value
  */
 
 int _atoi(char *std)
@@ -106,5 +107,6 @@ int _atoi(char *std)
 		num *= 10;
 		num += (std[i] - '0');
 	}
+
 	return (num);
 }
