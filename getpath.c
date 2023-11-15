@@ -32,7 +32,7 @@ char *_getpath(char *cmd)
 			full_cmd = malloc(_strlen(dir) + _strlen(cmd) + 2);
 			if (full_cmd)
 			{
-				_strcpy(full_cmd, dir);
+				_strcp(full_cmd, dir);
 				_strcat(full_cmd, "/");
 				_strcat(full_cmd, cmd);
 				if (stat(full_cmd, &st) == 0)

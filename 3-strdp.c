@@ -3,7 +3,7 @@
 /**
  * _strdp - duplicate
  * @str : the string to duplicate
- * Return : duplicate string.
+ * Return: string.
  */
 
 char *_strdp(const char *str)

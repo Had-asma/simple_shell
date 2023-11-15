@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * frcmd - free the command
+ * freecmd - free the command
  * @arr : command input
- * Return : Nothing
+ * Return: Nothing
  */
 
-void frcmd(char **arr)
+void freecmd(char **arr)
 {
 	int i;
 

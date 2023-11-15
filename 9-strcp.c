@@ -1,22 +1,22 @@
 #include "shell.h"
 
 /**
- * *_strcp - copies this string pointed to by src, including the terminating
- * null byte (\0), to the buffer pointed to by dest
- * @dest : char type string
- * @src : char type string
- * Return : pointer to dest
+ * *_strcp - copies this string pointed to by srd, including the terminating
+ * null byte (\0), to the buffer pointed to by eest
+ * @eest : char type string
+ * @srd : char type string
+ * Return: pointer to eest
  */
 
-char *_strcp(char *dest, char *src)
+char *_strcp(char *eest, char *srd)
 {
 	int i;
 
-	for (i = 0; src[i] != '\0'; i++)
+	for (i = 0; srd[i] != '\0'; i++)
 	{
-		dest[i] = src[i];
+		eest[i] = srd[i];
 	}
-	dest[i] = '\0';
+	eest[i] = '\0';
 
-	return (dest);
+	return (eest);
 }

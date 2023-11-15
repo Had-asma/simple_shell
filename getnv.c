@@ -1,14 +1,14 @@
 #include "shell.h"
 
 /**
- * *_getnv - ...
+ * _getenv - ...
  * @v : input user
- * Return : string
+ * Return: string
  */
 
-char *_getnv(char *v)
+char *_getenv(char *v)
 {
-	char *tmp, *ky, *val, *env;
+	char *tmp, *key, *val, *env;
 	int i;
 
 	for (i = 0; environ[i]; i++)

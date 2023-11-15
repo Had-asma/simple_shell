@@ -1,11 +1,11 @@
 #include "shell.h"
 /**
- * is_biltin - .....
+ * is_builtin - .....
  * cmd: ....
  * Return: integer.
  */
 
-int is_biltin(char *cmd)
+int is_builtin(char *cmd)
 {
 	char *builtin[] = {"exit", "env", "setenv", "cd", NULL};
 	int i;
@@ -19,14 +19,14 @@ int is_biltin(char *cmd)
 }
 
 /**
- * handl_builtin - ........
+ * handle_builtin - ........
  * @cmd: ........
  * @argv: ......
  * @status: .......
  * @idx: ...........
  * Return: Nothing.
  */
-void handl_builtin(char **cmd, char **argv, int *status, int idx)
+void handle_builtin(char **cmd, char **argv, int *status, int idx)
 {
         if (_strcmp(cmd[0], "exit") == 0)
               exit_shell(cmd, argv, status, idx);
@@ -83,6 +83,7 @@ void print_env(char **cmd, int *status)
 
 	for (i = 0; environ[i]; i++)
 	{
+		write(STDOUT_FILENO, environ[i], _strlen[i]));
 		write(STDOUT_FILENO, "\n", 1);
 	}
 	freecmd(cmd);
