@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * _itoa - ....
+ * _itoa - fonction itoa
  * @n : integer
  * Return : ascii value
  */
@@ -28,11 +28,11 @@ char *_itoa(int n)
 /**
  * reverse_string - reverse strings
  * @len : integer
- * @str : ...
+ * @std : value by user
  * Return : string
  */
 
-void reverse_string(char *str, int len)
+void reverse_string(char *std, int len)
 {
 	char tmp;
 	int start = 0;
@@ -40,9 +40,9 @@ void reverse_string(char *str, int len)
 
 	while (start < end)
 	{
-		tmp = str[start];
-		str[start] = str[end];
-		str[end] = tmp;
+		tmp = std[start];
+		std[start] = std[end];
+		std[end] = tmp;
 		start++;
 		end--;
 	}
@@ -73,19 +73,19 @@ void print_err(char *name, char *cmd, int idx)
 
 /**
  * is_positive_num - ...
- * @str : ....
+ * @std : ....
  * Return : integer
  */
 
-int is_positive_num(char *str)
+int is_positive_number(char *std)
 {
 	int i;
 
-	if (!str)
+	if (!std)
 		return (0);
-	for (i = 0, str[i]; i++)
+	for (i = 0, std[i]; i++)
 	{
-		if (str[i] < '0' || str[i] > '9')
+		if (std[i] < '0' || std[i] > '9')
 			return (0);
 	}
 	return (1);
@@ -93,18 +93,18 @@ int is_positive_num(char *str)
 
 /**
  * _atoi - ...
- * @str : ...;
+ * @std : ...
  * Retuen : integer value
  */
 
-int _atoi(char *str)
+int _atoi(char *std)
 {
 	int i, num = 0;
 
-	for (i = 0; str[i]; i++)
+	for (i = 0; std[i]; i++)
 	{
 		num *= 10;
-		num += (str[i] - '0');
+		num += (std[i] - '0');
 	}
 	return (num);
 }

@@ -1,7 +1,7 @@
 #include "shell.h"
 /**
  * is_builtin - .....
- * cmd: ....
+ * @cmd: input command by user.
  * Return: integer.
  */
 
@@ -12,8 +12,8 @@ int is_builtin(char *cmd)
 
 	for (i = 0; builtin[i]; i++)
 	{
-		if (_strcmp(cmd, builtin[i] == 0)
-				return (1);
+		if (_strcmp(cmd, builtin[i]) == 0)
+			return (1);
 	}
 	return (0);
 }

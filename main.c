@@ -8,16 +8,7 @@
  * Return: 0 always.
  */
 
-int main (int ac, char **argv)
-=======
- * main - simple shell function
- * @ac : count of arguments
- * @argv : arguments
- * Return : 0 always.
- */
-
-int main(int ac, char **argv)
->>>>>>> 2548a2ed579ad15ce91f73006865e29718f832ff
+int main(int ac, char **arg)
 {
 	char *line = NULL;
 	char **cmd = NULL;
@@ -26,9 +17,6 @@ int main(int ac, char **argv)
 	while (1)
 	{
 		line = read_line();
-<<<<<<< HEAD
-		if (line ==
-=======
 		if (line == NULL)
 		{
 			if (isatty(STDIN_FILENO))
@@ -46,4 +34,3 @@ int main(int ac, char **argv)
 			status = _execute(cmd, argv, idx);
 	}
 }
->>>>>>> 2548a2ed579ad15ce91f73006865e29718f832ff
