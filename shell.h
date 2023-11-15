@@ -22,7 +22,7 @@ char **tokenizer(char *line);
 
 char *_strdp(const char *std);
 int _strcmp(char *s1, char *s2);
-int _strlen(char *s)
+int _strlen(char *s);
 char *_strct(char *eest, char *srd);
 char *_strcp(char *eest, char *srd);
 
@@ -39,6 +39,6 @@ void exit_shell(char **cmd, char **argv, int *status, int idx);
 void print_env(char **cmd, int *status);
 
 int is_positive_number(char *std);
-int _atoi(char *std)
+int _atoi(char *std);
 
 #endif
