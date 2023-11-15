@@ -30,7 +30,7 @@ void handle_builtin(char **cmd, char **argv, int *status, int idx)
 {
 if (_strcmp(cmd[0], "exit") == 0)
 exit_shell(cmd, argv, status, idx);
-else if (_str(cmd[0], "env") == 0)
+else if (_strcp(cmd[0], "env") == 0)
 print_env(cmd, status);
 }
 /**
@@ -48,7 +48,7 @@ void exit_shell(char **cmd, char **argv, int *status, int idx)
 
 	if (cmd[1])
 	{
-		if (is_positive_num(cmd[1]))
+		if (is_positive_number(cmd[1]))
 		{
 			exit_value = _atoi(cmd[1]);
 		}
@@ -62,12 +62,12 @@ void exit_shell(char **cmd, char **argv, int *status, int idx)
 			write(STDERR_FILENO, cmd[1], _strlen(cmd[1]));
 			write(STDERR_FILENO, "\n", 1);
 			free(index);
-			frcmd(cmd);
+			freecmd(cmd);
 			(*status) = 2;
 			return;
 		}
 	}
-	frcmd(cmd);
+	freecmd(cmd);
 	exit(exit_value);
 }
 /**
@@ -82,9 +82,9 @@ void print_env(char **cmd, int *status)
 
 	for (i = 0; environ[i]; i++)
 	{
-		write(STDOUT_FILENO, environ[i], _strlen[i]));
+		write(STDOUT_FILENO, environ[i], _strlen[i]);
 		write(STDOUT_FILENO, "\n", 1);
 	}
-	frcmd(cmd);
+	freecmd(cmd);
 	(*status) = 0;
 }

@@ -8,7 +8,7 @@
  * Return: 0 always.
  */
 
-int main(int ac, char **arg)
+int main(int ac, char **argv)
 {
 	char *line = NULL;
 	char **cmd = NULL;

@@ -38,7 +38,7 @@ char **tokenizer(char *line)
 	token = strtok(line, DELIM);
 	while (token)
 	{
-		cmd[i] = _strdp(tokan);
+		cmd[i] = _strdp(token);
 		token = strtok(NULL, DELIM);
 		i++;
 	}

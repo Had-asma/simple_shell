@@ -14,8 +14,8 @@ char *_getenv(char *v)
 	for (i = 0; environ[i]; i++)
 	{
 		tmp = _strdp(environ[i]);
-		ky = strtok(tmp, "=");
-		if (_strcmp(ky, v) == 0)
+		key = strtok(tmp, "=");
+		if (_strcmp(key, v) == 0)
 		{
 			val = strtok(NULL, "\n");
 			env = _strdp(val);

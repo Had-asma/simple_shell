@@ -17,7 +17,7 @@ int _execut(char **cmd, char **argv, int idx)
 	full_cmd = _getpath(cmd[0]);
 	if (!full_cmd)
 	{
-		print_error(argv[0], cmd[0], idx);
+		print_err(argv[0], cmd[0], idx);
 		freecmd(cmd);
 		return (127);
 	}
@@ -36,5 +36,5 @@ int _execut(char **cmd, char **argv, int idx)
 		freecmd(cmd);
 		free(full_cmd), full_cmd = NULL;
 	}
-	return (WEXISTATUS(status));
+	return (WEXITSTATUS(status));
 }
