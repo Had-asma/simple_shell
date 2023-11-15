@@ -30,7 +30,7 @@ char *_getnev(char *var);
 char *_getpath(char *cmd);
 
 char *_itoa(int n);
-void reverse_string(char *str, int len);
+void reverse_string(char *std, int len);
 void print_err(char *name, char *cmd, int idx);
 
 void handl_builtin(char **cmd, char **argv, int *status, int idx);
@@ -38,7 +38,7 @@ int is_builtin(char *cmd);
 void exit_shell(char **cmd, char **argv, int *status, int idx);
 void print_env(char **cmd, int *status);
 
-int is_positive_number(char *str);
-int _atoi(char *str);
+int is_positive_number(char *std);
+int _atoi(char *std)
 
 #endif
