@@ -1,8 +1,8 @@
 #include "shell.h"
 /**
  * *_itoa - fonction itoa
- * @n : integer
- * Return : ascii value
+ * @n: integer
+ * Return: ascii value
  */
 
 char *_itoa(int n)
@@ -27,9 +27,9 @@ char *_itoa(int n)
 }
 /**
  * reverse_string - reverse strings
- * @len : integer
- * @std : value by user
- * Return : string
+ * @len: integer
+ * @std: value by user
+ * Return: string
  */
 
 void reverse_string(char *std, int len)
@@ -72,9 +72,9 @@ void print_err(char *name, char *cmd, int idx)
 }
 
 /**
- * is_positive_num - ...
- * @std : ....
- * Return : integer
+ * is_positive_number - checks if a string represents a positive number
+ * @std: the input string to be checked
+ * Return: 1 if the string is positive number, 0 otherwise.
  */
 
 int is_positive_number(char *std)
@@ -93,9 +93,9 @@ int is_positive_number(char *std)
 }
 
 /**
- * _atoi - ...
- * @std : ...
- * Return : integer value
+ * _atoi - converts a string to an integer
+ * @std: the input string to be converted
+ * Return: integer value
  */
 
 int _atoi(char *std)

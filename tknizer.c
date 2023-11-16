@@ -2,8 +2,8 @@
 
 /**
  * tokenizer - tokenize the line
- * @line : varbiale of type string
- * Redturn: char.
+ * @line: varbiale of type string
+ * Return: char.
  */
 
 char **tokenizer(char *line)
