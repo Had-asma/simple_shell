@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _execut - to execute the shell commands.
+ * _execute - to execute the shell commands.
  * @cmd: input command by user.
  * @argv: ......
  * @idx: .........
