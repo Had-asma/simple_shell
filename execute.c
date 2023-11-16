@@ -8,7 +8,7 @@
  * Return: integer.
  */
 
-int _execut(char **cmd, char **argv, int idx)
+int _execute(char **cmd, char **argv, int idx)
 {
 	char *full_cmd;
 	pid_t child;

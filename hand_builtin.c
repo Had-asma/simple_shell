@@ -26,7 +26,7 @@ int is_builtin(char *cmd)
  * @idx: ...........
  * Return: Nothing.
  */
-void handle_builtin(char **cmd, char **argv, int *status, int idx)
+void handl_builtin(char **cmd, char **argv, int *status, int idx)
 {
 if (_strcmp(cmd[0], "exit") == 0)
 exit_shell(cmd, argv, status, idx);
