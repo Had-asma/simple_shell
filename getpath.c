@@ -14,22 +14,6 @@ char *_getpath(char *cmd)
 	{
 		if (cmd[i] == '/')
 		{
-<<<<<<< HEAD
-			if (cmd[i] == '/')
-			{
-				if (stat(cmd, &st) == 0)
-					return (_strdp(cmd));
-				return (NULL);
-			}
-		}
-		path_env = _getnev("PATH");
-
-		if (!path_env)
-			return (NULL);
-		dir = strtok(path_env, ":");
-
-		while (dir)
-=======
 			if (stat(cmd, &st) == 0)
 				return (_strdp(cmd));
 			return (NULL);
@@ -43,29 +27,15 @@ char *_getpath(char *cmd)
 	{
 		full_cmd = malloc(_strlen(dir) + _strlen(cmd) + 2);
 		if (full_cmd)
->>>>>>> db42d56237e905797f7eab91fb00044c58aeda09
 		{
 			_strcp(full_cmd, dir);
 			_strct(full_cmd, "/");
 			_strct(full_cmd, cmd);
+
 			if (stat(full_cmd, &st) == 0)
 			{
-<<<<<<< HEAD
-				_strcp(full_cmd, dir);
-				_strct(full_cmd, "/");
-				_strct(full_cmd, cmd);
-
-				if (stat(full_cmd, &st) == 0)
-				{
-					free(path_env);
-					return (full_cmd);
-				}
-				free(full_cmd), full_cmd = NULL;
-				dir = strtok(NULL, ":");
-=======
 				free(path_env);
 				return (full_cmd);
->>>>>>> db42d56237e905797f7eab91fb00044c58aeda09
 			}
 			free(full_cmd), full_cmd = NULL;
 			dir = strtok(NULL, ":");
